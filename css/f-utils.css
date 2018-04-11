@@ -1,0 +1,9 @@
+/*!
+ * F-Base 0.1
+ * Copyright 2017 codev01, S-Devs
+ */
+
+.f_utils-changelog-ul { }
+.f_utils-changelog-ul li {
+  margin-left: -20px;
+}

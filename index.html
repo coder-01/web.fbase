@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1880e0"> <!-- Для Google Chrome -->
+	<link href="css/f.css" rel="stylesheet">
+	<link href="css/f-reset.css" rel="stylesheet">
+	<title>F-Base</title>
+  </head>
+  <body>
+	<!-- Page Header -->
+	<div class="f-page-header">
+	  <h1>F-Base</h1>
+	  <p>developed by codev01 (S-Devs)</p>
+	</div>
+	
+	<!-- Page Content -->
+	<div class="f-container">
+      <div class="f-row">
+        <div class="f-col">
+		  <p class="f-category">О проекте F-Base</p>
+		  <p class="f-anim_zoom_element"><b>F-Base</b> — это мини-фреймворк в стиле Material Design для вёрстки одно страничных веб-сайтов, которые, в основном, содержат некую информацию (changelog, инструкции и т.д).</p>
+		  <p class="f-anim_zoom_element">Также F-Base может использоваться в приложениях-учебниках (как DevPlus). Загрузить тестовое приложение с интеграцией с F-Base можно по <a href="vk.com">ссылке</a>.</p>
+		</div>
+		<hr>
+		<div class="f-col">
+		  <p class="f-category">Разработка F-Base</p>
+		  <p class="f-anim_zoom_element">На данном этапе разработки, F-Base имеет весьма скудный набор стилей. Разработка ведётся открыто на <a href="">Github</a>. Вы тоже можете подключиться к разработке.</p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="f-container">
+      <div class="f-row">
+        <div class="f-col">
+		  <p class="f-category">Компоненты F-Base UI</p>
+		  <p class="f-anim_zoom_element">Чтобы ознакомить Вас с интерфейсом F-Base необходимо показать компоненты этого интерфейса.</p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="f-container">
+	  <div class="f-row">
+		<div class="f-col">
+		  <p class="f-category">Компонент Alert</p>
+		  <p class="f-anim_zoom_element"><b>Alert</b> - это весьма необходимый элемент интерфейса. Alert выполняет роль уведомления-подсказки. Выглядит это примерно так:</p>
+		  <div class="f-alert">
+			<h4>Привет!</h4>
+			<p>Это Alert из F-Base.</p>
+		  </div>
+		  <p class="f-anim_zoom_element">Чтобы разместить Alert у себя на разметке используйте контейнер <code>&lt;div&gt;&lt;/div&gt;</code> с классом <code>f-alert</code>:</p>
+		  <div class="f-code-container">
+			<div class="f-code-container-head f-code-html"></div>
+			<code>
+			  &lt;div <b>class=&quot;f-alert&quot;</b>&gt;<br>
+			  &nbsp;&nbsp;&lt;h4&gt;Привет!&lt;/h4&gt;<br>
+			  &nbsp;&nbsp;&lt;p&gt;Это Alert из F-Base.&lt;/p&gt;<br>
+			  &lt;/div&gt;
+			</code>
+		  </div>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Конечно, Alert имеет разновидности. Чтобы вывести на экран сообщение об опасности воспользуйтесь этим Alert:</p>
+		  <div class="f-alert f-alert-danger">
+			<h4>Привет!</h4>
+			<p>Это Alert Danger из F-Base.</p>
+		  </div>
+		  <div class="f-code-container">
+			<div class="f-code-container-head f-code-html"></div>
+			<code>
+			  &lt;div class=&quot;f-alert <b>f-alert-danger</b>&quot;&gt;<br>
+			  <i>&lt;!-- Тут просто добавили класс f-alert-danger --&gt;</i><br>
+			  &lt;/div&gt;
+			</code>
+		  </div>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Чтобы вывести на экран информативное сообщение воспользуйтесь этим Alert:</p>
+		  <div class="f-alert f-alert-info">
+			<h4>Привет!</h4>
+			<p>Это Alert Info из F-Base.</p>
+		  </div>
+		  <div class="f-code-container">
+			<div class="f-code-container-head f-code-html"></div>
+			<code>
+			  &lt;div class=&quot;f-alert <b>f-alert-info</b>&quot;&gt;<br>
+			  <i>&lt;!-- Тут просто добавили класс f-alert-info --&gt;</i><br>
+			  &lt;/div&gt;
+			</code>
+		  </div>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Чтобы вывести на экран сообщение с цветом акцента интерфейса воспользуйтесь этим Alert:</p>
+		  <div class="f-alert f-alert-primary">
+			<h4>Привет!</h4>
+			<p>Это Alert Primary из F-Base.</p>
+		  </div>
+		  <div class="f-code-container">
+			<div class="f-code-container-head f-code-html"></div>
+			<code>
+			  &lt;div class=&quot;f-alert <b>f-alert-primary</b>&quot;&gt;<br>
+			  <i>&lt;!-- Тут просто добавили класс f-alert-primary --&gt;</i><br>
+			  &lt;/div&gt;
+			</code>
+		  </div>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Чтобы вывести на экран сообщение об удачном выполнении операции воспользуйтесь этим Alert:</p>
+		  <div class="f-alert f-alert-success">
+			<h4>Привет!</h4>
+			<p>Это Alert Success из F-Base.</p>
+		  </div>
+		  <div class="f-code-container">
+			<div class="f-code-container-head f-code-html"></div>
+			<code>
+			  &lt;div class=&quot;f-alert <b>f-alert-success</b>&quot;&gt;<br>
+			  <i>&lt;!-- Тут просто добавили класс f-alert-success --&gt;</i><br>
+			  &lt;/div&gt;
+			</code>
+		  </div>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Чтобы вывести на экран предупреждающее сообщение воспользуйтесь этим Alert:</p>
+		  <div class="f-alert f-alert-warning">
+			<h4>Привет!</h4>
+			<p>Это Alert Warning из F-Base.</p>
+		  </div>
+		  <div class="f-code-container">
+			<div class="f-code-container-head f-code-html"></div>
+			<code>
+			  &lt;div class=&quot;f-alert <b>f-alert-warning</b>&quot;&gt;<br>
+			  <i>&lt;!-- Тут просто добавили класс f-alert-warning --&gt;</i><br>
+			  &lt;/div&gt;
+			</code>
+		  </div>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Но запомните, что в Alert есть заголовок <code>&lt;h4&gt;&lt;h4/&gt;</code> и сообщение <code>&lt;p&gt;&lt;/p&gt;</code>. Использовать другие теги не стоит. Будут искажения интерфейса.</p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="f-container">
+      <div class="f-row">
+        <div class="f-col">
+		  <p class="f-category">Компонент Page Header</p>
+		  <p class="f-anim_zoom_element"><b>Page Header</b> - это элемент, который является заголовком страницы (точно как на этой) и распологается в самом начале страницы.</p>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Чтобы вывести на экран такой заголовок, необходимо использовать тег <code>&lt;div&gt;&lt;/div&gt;</code> с классом <code>f-page-header</code>:</p>
+		  <div class="f-code-container">
+			<div class="f-code-container-head f-code-html"></div>
+			<code>
+			  &lt;div class=&quot;<b>f-page-header</b>&quot;&gt;<br>
+			  &nbsp;&nbsp;&lt;h1&gt;Title&lt;/h1&gt;<br>
+			  &nbsp;&nbsp;&lt;p&gt;Subtitle&lt;/p&gt;<br>
+			  &lt;/div&gt;
+			</code>
+		  </div>
+		  <hr class="f-margin-b_14">
+		  <p class="f-anim_zoom_element">Но запомните, что в Page Header есть заголовок <code>&lt;h1&gt;&lt;h1/&gt;</code> и подзаголовок <code>&lt;p&gt;&lt;/p&gt;</code>. Использовать другие теги не стоит. Будут искажения интерфейса.</p>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Page Footer -->
+	<div class="f-page-footer">
+	  <ul>
+		<p><b>О F-Base</b></p>
+		<li>Версия интерфейса: <a href="f-changelog.html">0.1</a></li>
+		<li>Версия Assets: 1</li>
+		<li>Тип интерфейса: Light</li>
+		<li>Тип сборки: test</li>
+		<br><p><b>Ссылки</b></p>
+		<li><a href="http://vk.com/s.devs">S-Devs </a>- разработка F-Base и компонентов.</li>
+	  </ul>
+	</div>
+  </body>
+</html>
